@@ -5,6 +5,8 @@ This is an improved version of `java.math.BigInteger` that uses fast algorithms 
 Depending on the input size, numbers are multiplied using [Long Multiplication](http://en.wikipedia.org/wiki/Multiplication_algorithm#Long_multiplication), [Karatsuba](http://en.wikipedia.org/wiki/Karatsuba_algorithm), [Toom-Cook](http://en.wikipedia.org/wiki/Toom%E2%80%93Cook_multiplication), or [Schönhage-Strassen](http://en.wikipedia.org/wiki/Sch%C3%B6nhage%E2%80%93Strassen_algorithm).
 For division, [Long Division](http://en.wikipedia.org/wiki/Long_division), [Burnikel-Ziegler Division](http://cr.yp.to/bib/1998/burnikel.ps), or [Barrett Division](http://en.wikipedia.org/wiki/Barrett_reduction) is used.
 
+Packaged into a single jar here using bignums.BigInteger instead of java.math.BigInteger.
+
 Benchmark results for multiplication of two n-digit numbers (Intel E2160 @1.8 GHz, 32-bit mode):
 <table>
   <tr>
