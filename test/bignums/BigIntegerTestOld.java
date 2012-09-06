@@ -1,14 +1,13 @@
-import static java.math.BigInteger.ONE;
-import static java.math.BigInteger.ZERO;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+package bignums;
 
+import static bignums.BigInteger.ONE;
+import static bignums.BigInteger.ZERO;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.math.BigInteger;
 import java.util.Random;
-
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 public class BigIntegerTestOld {
