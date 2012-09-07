@@ -29,10 +29,7 @@
 
 package bignums;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -102,7 +99,7 @@ import java.util.Random;
  * @since JDK1.1
  */
 
-public class BigInteger extends Number implements Comparable<BigInteger> {
+public class BigInteger extends Number implements Comparable<BigInteger>, Serializable {
     /**
      * The signum of this BigInteger: -1 for negative, 0 for zero, or
      * 1 for positive.  Note that the BigInteger zero <i>must</i> have

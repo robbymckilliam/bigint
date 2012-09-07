@@ -2,9 +2,11 @@
  * Ration arithmetic class taken from the Rosetta stone website.
  */
 package bignums;
- 
 
-public class BigRational extends Number implements Comparable<BigRational>
+import java.io.Serializable;
+
+
+public class BigRational extends Number implements Comparable<BigRational>, Serializable
 {
  
   public final static BigRational ZERO = new BigRational(false, BigInteger.ZERO, BigInteger.ONE);
