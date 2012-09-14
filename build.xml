@@ -27,5 +27,11 @@
     </jar>
   </target>
 
+ <target name="clean">
+    <delete>
+      <fileset dir="${build.dir}" includes="**/*.class" />
+    </delete>
+  </target>
+
 
 </project>
