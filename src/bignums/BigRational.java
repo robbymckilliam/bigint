@@ -60,6 +60,11 @@ public class BigRational extends Number implements Comparable<BigRational>
     this.hashCode = computeHashCode(isNegative, numerator, denominator);
   }
   
+  /** Integer.  Assumes denominator is 1. */
+  public BigRational(BigInteger numerator) {
+      this(numerator, BigInteger.ONE);
+  } 
+  
   public BigRational(int numerator, int denominator){  
       this(new BigInteger(Integer.toString(numerator,2),2), 
             new BigInteger(Integer.toString(denominator,2),2), false, false);  

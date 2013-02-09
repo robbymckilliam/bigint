@@ -20,12 +20,19 @@
             classpathref="build.classpath"
 	    includeantruntime="false">
       <include name="src/**/*.java"   />
+      <include name="test/**/*.java"   />
     </javac>
     <jar destfile="${base.dir}/lib/bignums.jar">
       <fileset dir="src/"/>
+      <fileset dir="test/"/>
       <fileset dir="build/"/>
     </jar>
   </target>
 
+  <target name="clean">
+    <delete>
+      <fileset dir="${build.dir}" includes="**/*.class" />
+    </delete>
+  </target>
 
 </project>
