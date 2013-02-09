@@ -29,10 +29,18 @@
     </jar>
   </target>
 
+<<<<<<< HEAD
   <target name="clean">
+=======
+ <target name="clean">
+>>>>>>> 3d8ed003fdea12c0b1d4769debcfdc1337b148cc
     <delete>
       <fileset dir="${build.dir}" includes="**/*.class" />
     </delete>
   </target>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3d8ed003fdea12c0b1d4769debcfdc1337b148cc
 
 </project>
