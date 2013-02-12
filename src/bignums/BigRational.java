@@ -235,8 +235,8 @@ public class BigRational extends Number implements Comparable<BigRational>, Seri
   
   /** Rounds to nearest BigInteger */
   public BigInteger round() {
-    int prec = Math.max(1, (numerator.bitLength() - denominator.bitLength()));
-    BigDecimal bigdec = this.toBigDecimal(prec,RoundingMode.FLOOR).setScale(0, BigDecimal.ROUND_HALF_UP);
+    int prec = (numerator.bitLength() + denominator.bitLength());
+    BigDecimal bigdec = this.toBigDecimal(prec,RoundingMode.HALF_EVEN).setScale(0, BigDecimal.ROUND_HALF_UP);
     return bigdec.toBigInteger();
   }
  
